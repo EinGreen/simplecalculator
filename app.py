@@ -16,6 +16,27 @@ try:
     method = int(input("Please enter your method: "))
     num1 = int(input("Enter first number: "))
     num2 = int(input("Enter second number: "))
+
+    # addition:
+    if(method == 1):
+        result = add.add(num1, num2)
+        result_statement = f"Your result: {result}"
+        print(result_statement)
+    # subtraction: 
+    elif(method == 2):
+        result = sub.subtract(num1, num2)
+        result_statement = f"Your result: {result}"
+        print(result_statement)
+    # multiplication: 
+    elif(method == 3):
+        result = mul.multiply(num1, num2)
+        result_statement = f"Your result: {result}"
+        print(result_statement)
+    # division: 
+    elif(method == 4):
+        result = div.divide(num1, num2)
+        result_statement = f"Your result: {result}"
+        print(result_statement)
 except ZeroDivisionError:
     print("Bruh, you can't divide by 0, don't even try") 
 except ValueError:

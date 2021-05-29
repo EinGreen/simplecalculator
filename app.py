@@ -37,6 +37,8 @@ try:
         result = div.divide(num1, num2)
         result_statement = f"Your result: {result}"
         print(result_statement)
+    else:
+        print("Invalid method option")
 except ZeroDivisionError:
     print("Bruh, you can't divide by 0, don't even try") 
 except ValueError:
